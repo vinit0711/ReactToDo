@@ -26,12 +26,17 @@ div {
   align-items: center;
 }
 
-button {
+/* button {
   padding: 15px 20px;
   background-color: blue;
-  color: white;
+  color: rgb(46, 10, 10);
   border: 1px solid blue;
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+} */
+
+App {
+  text-align: center;
+  margin-top: 32px;
 }
