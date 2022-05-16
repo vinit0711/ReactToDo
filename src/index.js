@@ -4,10 +4,11 @@ import App from "./App";
 // import Heading from "./Heading";
 // import App from "./App";
 
+import "./index.css"
+
 // import Card from "./Card"
 // // import youtuber, { favrprog } from "./App";
 // import Sdata from "./Sdata";
-
 
 // ReactDOM.render(
 //   <>

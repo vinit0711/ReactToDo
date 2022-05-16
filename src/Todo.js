@@ -6,8 +6,10 @@ import {
   ListItemText,
   Modal, Box, Input
 } from "@mui/material";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import React, { useState } from "react";
 import App from "./App";
+import "./index.css"
 // import Box from '@mui/material/Box';
 // import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -64,14 +66,9 @@ function Todo(props) {
           <ListItemText primary={props.todo.todo} secondary="🚀"></ListItemText>
         </ListItem>
         <Button onClick={(e) => setOpen(true)}>Edit</Button>
-        <Button
+        <DeleteForeverIcon
           onClick={
-            (event) => db.collection("todos").doc(props.todo.id).delete()
-            // console.log(db.collection("todos").doc(props.todo.id))
-          }
-        >
-          ⛔ Delete
-        </Button>
+            (event) => db.collection("todos").doc(props.todo.id).delete()} />
       </List>
     </>
   );
